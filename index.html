@@ -14,7 +14,7 @@
             <div class="logo"><h5>Prisha.</h5></div>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="#">About Me</a></li>
                 <li><a href="#">Projects</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
@@ -25,5 +25,53 @@
         </div>
     </div>
 </div>
+<!--------------About--------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="About Me image.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I hail from Surat, Gujarat. Currently I am pursuing B.Tech in Computer Science and Engineering 
+                    from Indian Institute of Technology Delhi. I am always trying to learn and explore. "All genuine 
+                    learning comes through experience" are the words I live by.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('hobbies')">Hobbies</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="hobbies">
+                    <ul>
+                        <li><span>Dance</span><br>Love dancing to my core; mostly prefer hip-hop over other styles</li>
+                        <li><span>Poetry</span><br>I keep writing poems every once in while</li>
+                        <li><span>Video Editing</span><br>Not yet explored much of it but would love to</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Primary and High School</span><br>Studied in State Board of Gujarat (GSEB)</li>
+                        <li><span>Higher Secondary Education</span><br>Completed under Central Board of Secondary Education (CBSE)</li>
+                        <li><span>College</span><br>Currently in my second year at IITD, pursuing B.Tech in CSE</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
 </body>
 </html>
