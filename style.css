@@ -136,7 +136,7 @@ nav ul li a:hover::after{
 }
 /*-------------------Projects-------------------*/
 #projects{
-    padding: 50px 0;
+    padding: 80px 0;
 }
 .project-list{
     display: grid;
@@ -182,4 +182,60 @@ nav ul li a:hover::after{
 }
 .project:hover .layer{
     height: 100%;
+}
+/*-------------------Contact-------------------*/
+#contact{
+    padding: 80px 0;
+}
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left ul{
+    margin-top: 30px;
+}
+.contact-left ul li{
+    list-style: circle;
+}
+.contact-left h1{
+    color: #ababab;
+}
+.btn{
+    display: inline-block;
+    background: rgb(150, 3, 150);
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid rgb(150, 3, 150);
+    padding: 14px 60px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.btn:hover{
+    cursor: pointer;
+    color: #fff;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 100;
+    margin-top: 20px;
 }
