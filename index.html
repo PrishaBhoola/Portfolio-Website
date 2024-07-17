@@ -20,6 +20,7 @@
                 <li><a href="#contact">Contact</a></li>
                 <i class="fas fa-times" onclick="closemenu()"></i>
             </ul>
+            <img src="SUN.png" id="icon">
             <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
@@ -138,6 +139,17 @@
     }
     function closemenu(){
         sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    var icon = document.getElementById("icon");
+    icon.onclick = function(){
+        document.body.classList.toggle("light-theme");
+        if(document.body.classList.contains("light-theme")){
+            icon.src = "moon.jpg";
+        }else{
+            icon.src = "SUN.png";
+        }
     }
 </script>
 </body>
